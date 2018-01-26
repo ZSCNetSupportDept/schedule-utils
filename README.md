@@ -6,17 +6,17 @@ Needs `openpyxl` to run, to install: `pip install openpyxl`
 Run with `./extract.py -h` for help
 
 ## Examples
-Just print (assuming the target file is `test.xlsx`):
+Just print:
 ```
 ./extract.py -f print test.xlsx
 ```
 
-To extract to csv format (assuming the target file is `test.xlsx`) (*WIP*):
+To extract to csv format:
 ```
 ./extract.py -f csv test.xlsx
 ```
 
-To extract to sql-update format (assuming the target file is `test.xlsx`):
+To extract to sql-update format:
 ```
 ./extract.py -f sql_update test.xlsx
 ```

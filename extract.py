@@ -8,6 +8,7 @@ from openpyxl import load_workbook, Workbook
 from openpyxl.worksheet import Worksheet
 
 from blocks import Block
+from formatter_csv import format_csv
 from formatter_sql import format_sql
 
 LEADER_ROW = 32
@@ -59,4 +60,5 @@ if __name__ == '__main__':
     {
         'print': pprint,
         'sql_update': lambda schedule: format_sql(schedule, table=args.table),
+        'csv': format_csv
     }[args.format](schedule)
